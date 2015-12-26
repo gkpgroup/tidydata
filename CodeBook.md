@@ -132,3 +132,30 @@ It is good practice to release unwanted data frames to save memory
 Last step is to save the tidy data set to a file in the working directory
 
         write.table(tidy.data,"tidydata.txt",row.names = FALSE)
+
+# Data columns of `tidydata.txt`
+First three columns represent the Id data in the tidy data and follow `3rd Normal Form`
+
+      "Subject": int
+      "ActId"  : int
+      "ActName": Factor 
+
+Following columns provide `mean` of the observations of interest grouped by Subject and Activity Id and are of type `num`. The actual data they capture can be understood from the name of the column.
+
+    "mean.tBodyAcc_mean_X" "mean.tBodyAcc_mean_Y" "mean.tBodyAcc_mean_Z" "mean.tBodyAcc_std_X" 
+    "mean.tBodyAcc_std_Y" "mean.tBodyAcc_std_Z" "mean.tGravityAcc_mean_X" "mean.tGravityAcc_mean_Y" 
+    "mean.tGravityAcc_mean_Z" "mean.tGravityAcc_std_X" "mean.tGravityAcc_std_Y" "mean.tGravityAcc_std_Z"
+    "mean.tBodyAccJerk_mean_X" "mean.tBodyAccJerk_mean_Y" "mean.tBodyAccJerk_mean_Z" "mean.tBodyAccJerk_std_X" 
+    "mean.tBodyAccJerk_std_Y" "mean.tBodyAccJerk_std_Z" "mean.tBodyGyro_mean_X" "mean.tBodyGyro_mean_Y" 
+    "mean.tBodyGyro_mean_Z" "mean.tBodyGyro_std_X" "mean.tBodyGyro_std_Y" "mean.tBodyGyro_std_Z"
+    "mean.tBodyGyroJerk_mean_X" "mean.tBodyGyroJerk_mean_Y" "mean.tBodyGyroJerk_mean_Z" "mean.tBodyGyroJerk_std_X" 
+    "mean.tBodyGyroJerk_std_Y" "mean.tBodyGyroJerk_std_Z" "mean.tBodyAccMag_mean" "mean.tBodyAccMag_std" 
+    "mean.tGravityAccMag_mean" "mean.tGravityAccMag_std" "mean.tBodyAccJerkMag_mean" "mean.tBodyAccJerkMag_std"
+    "mean.tBodyGyroMag_mean" "mean.tBodyGyroMag_std" "mean.tBodyGyroJerkMag_mean" "mean.tBodyGyroJerkMag_std" 
+    "mean.fBodyAcc_mean_X" "mean.fBodyAcc_mean_Y" "mean.fBodyAcc_mean_Z" "mean.fBodyAcc_std_X" 
+    "mean.fBodyAcc_std_Y" "mean.fBodyAcc_std_Z" "mean.fBodyAccJerk_mean_X" "mean.fBodyAccJerk_mean_Y"
+    "mean.fBodyAccJerk_mean_Z" "mean.fBodyAccJerk_std_X" "mean.fBodyAccJerk_std_Y" "mean.fBodyAccJerk_std_Z" 
+    "mean.fBodyGyro_mean_X" "mean.fBodyGyro_mean_Y" "mean.fBodyGyro_mean_Z" "mean.fBodyGyro_std_X" 
+    "mean.fBodyGyro_std_Y" "mean.fBodyGyro_std_Z" "mean.fBodyAccMag_mean" "mean.fBodyAccMag_std"
+    "mean.fBodyBodyAccJerkMag_mean" "mean.fBodyBodyAccJerkMag_std" "mean.fBodyBodyGyroMag_mean" 
+    "mean.fBodyBodyGyroMag_std" "mean.fBodyBodyGyroJerkMag_mean" "mean.fBodyBodyGyroJerkMag_std"

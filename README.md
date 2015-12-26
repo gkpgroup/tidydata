@@ -5,7 +5,7 @@ This repo contains following files
 2. CodeBook.md
 
 # CodeBook.md
-Provides a detail walk through of the run_analysis.R file
+Provides a detail walk through of the run_analysis.R file and explains the columns in the final tidy data file.
 
 # Assumptions
 1. Script assumes that following libraries are available - `dplyr`, `stringr`, `reshape2`
